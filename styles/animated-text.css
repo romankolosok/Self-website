@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
+
+
+.animation {
+    porition: relative;
+    font-family: JetBrains Mono, monospace;
+    font-size: 1rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.string {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: move 5s infinite;
+    position: relative;
+    bottom: 0;
+}
+
+.greeting {
+    position: relative;
+    top: 0;
+    /*animation: white-out 1s infinite;*/
+    color: #6a8759;
+}
+
+@keyframes move {
+    25% {
+        transform: translatey(5rem);
+    }
+    50% {
+        transform: translatey(1.7rem);
+    }
+    75% {
+        transform: translatey(-1.5rem);
+    }
+    100% {
+        transform: translatey(-4.8rem);
+    }
+}

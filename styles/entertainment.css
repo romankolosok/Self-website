@@ -1,0 +1,186 @@
+/*.container:has(.navbar-brand) {*/
+/*    width: fit-content;*/
+/*    margin: 0;*/
+/*}*/
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    overflow: scroll;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+}
+
+html > *{
+    overflow: hidden;
+}
+
+pg-descr {
+    overflow: scroll;
+
+}
+
+
+#logo {
+    max-height: 4rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.img-description {
+    max-height: 50em;
+}
+
+#navbar-toggler-icon{
+    max-height: 3rem;
+    margin: 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.description {
+    background-color: hsla(225, 17%, 86%, 1);
+}
+
+.description .row h1 {
+    color: azure;
+}
+
+.page-box-w-img {
+    font-weight: bold;
+    position: relative;
+}
+
+.img-from-descr {
+    object-fit: cover;
+    height: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.page-box-w-img img{
+    transition: filter 1s
+}
+
+.page-box-w-img:hover img {
+    filter: blur(20px);
+    z-index: 1;
+}
+
+.page-box-w-img:hover .descr-text{
+    z-index: -1;
+}
+
+.bi {
+    fill: #ABB8C3;
+    margin: 0 .5rem;
+}
+
+.page-box-w-img:hover .hover-popup{
+    display: block;
+}
+
+.hover-popup {
+    font-style: italic;
+    color: #ffc107;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*top: 50%;*/
+    bottom: 50%;
+    margin: auto;
+    /*width: 40%;*/
+    z-index: 2;
+    display: none;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+@media screen and (min-width: 1200px){
+    .txt-description {
+        font-size: 2rem;
+    }
+    .hover-popup {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .txt-description {
+        font-size: 2.4rem;
+    }
+    svg {
+        width: 2rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .txt-description {
+        font-size: 1.5rem;
+    }
+    .hover-popup {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .txt-description {
+        font-size: 1rem;
+    }
+    .hover-popup {
+        font-size: 0.8rem;
+    }
+    svg {
+        width: 1.5rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .descr-text {
+        font-size: 0.5rem;
+    }
+    .hover-popup {
+        font-size: 0.5rem;
+    }
+    #navbar-toggler-icon{
+        max-height: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .descr-text {
+        font-size: 0.3rem;
+    }
+    .hover-popup {
+        font-size: 0.5rem;
+    }
+    svg {
+        width: 1rem;
+        margin-right: 2rem;
+    }
+}
