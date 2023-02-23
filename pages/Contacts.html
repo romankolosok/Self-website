@@ -8,28 +8,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/comments.css">
+    <script src="../scripts/comment.js"></script>
     <title>Document</title>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <div class="container-fluid mx-1 d-flex">
-            <a href="#" class="navbar-brand d-none d-md-block"><img src="../images/RK logo_new.png" alt="" id="logo"></a>
+            <a href="../index.html" class="navbar-brand d-none d-md-block"><img src="../images/RK logo_new.png" alt="" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle_navigation">
                 <a href="#" class=""><img src="../images/RK logo_new.png" alt="" id="navbar-toggler-icon"></a>
             </button>
         </div>
         <div class="collapse navbar-collapse" id="toggle_navigation">
             <ul class="navbar-nav text-center justify-content-center">
-                <li class="nav-item mx-5">
+                <li class="nav-item mx-5 home-menu-btn d-md-none">
                     <a href="../index.html" class="nav-link">Home</a>
+                </li >
+                <li class="nav-item mx-5">
+                    <a href="../pages/Ukraine.html" class="nav-link">Ukraine</a>
                 </li >
                 <li class="nav-item mx-5">
                     <a href="../pages/US.html" class="nav-link">US</a>
                 </li>
                 <li class="nav-item mx-5">
-                    <a href="../pages/Ukraine.html" class="nav-link">Ukraine</a>
+                    <a href="../pages/Entertainment.html" class="nav-link">Entertainment</a>
                 </li>
             </ul>
         </div>
@@ -37,45 +41,89 @@
 </header>
 <main>
     <section class="pg-title w-100 bg-primary py-2 py-md-4">
-        <h1 class="text-center text-white"><i>How am I having fun(at least trying)</i></h1>
+        <h1 class="text-center text-white"><i>How to disturb me</i></h1>
     </section>
 
-<!--    <ul class="nav nav-tabs" id="myTab" role="tablist">-->
-<!--        <li class="nav-item" role="presentation">-->
-<!--            <button class="nav-link active" data-bs-toggle="tab" data-bs-target=".descr" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>-->
-<!--        </li>-->
-<!--        <li class="nav-item" role="presentation">-->
-<!--            <button class="nav-link" data-bs-toggle="tab" data-bs-target=".images" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>-->
-<!--        </li>-->
-<!--    </ul>-->
-<!--    <div class="tab-content" id="myTabContent">-->
-<!--        <div class="tab-pane fade show active descr" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">-->
-<!--            lol-->
-<!--        </div>-->
-<!--        <div class="tab-pane fade images" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">-->
-<!--            images-->
-<!--        </div>-->
-<!--    </div>-->
     <div class="row story p-0">
-        <div class="col-md-4 story-img px-1 h-100 d-none d-md-flex py-4">
-            <img src="../images/us_1.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col p-0 descr-text">
-            <img src="../images/phone_us_1.jpg" alt="" class="img-fluid d-block d-md-none">
+        <div class="col p-0 descr-text d-md-flex align-items-center justify-content-center image-right">
+<!--            <img src="../images/phone_us_1.jpg" alt="" class="img-fluid d-block d-md-none">-->
+            <iframe  class="d-block d-md-none w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.4180216594996!2d-76.51628148481107!3d40.333071979374886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8a89b5535f5dd%3A0xc2042069eb6b4c3b!2sHammond%20Hall!5e0!3m2!1sen!2sus!4v1676564112139!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="textbox mx-3">
-                <h2>AAA</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tellus urna, dictum in urna at, volutpat maximus massa. Aliquam finibus arcu odio, ac ultrices lectus commodo sit amet. Suspendisse potenti. Donec gravida arcu a pellentesque vehicula. Vivamus in felis posuere, lobortis quam et, scelerisque augue. Pellentesque hendrerit, tellus non varius rhoncus, eros purus tempus ante, id gravida augue justo eget est. Donec fermentum nisl eget purus sagittis, blandit malesuada purus maximus. Praesent ultrices porttitor orci, eget fringilla sapien elementum sed. Praesent enim magna, luctus eget efficitur et, finibus in dui. Vestibulum ac interdum magna, vitae suscipit nisi. Duis ultricies volutpat massa et tempus. Nam consectetur leo sed tellus luctus hendrerit. In ipsum justo, rutrum mattis augue ac, pulvinar rhoncus leo.</p>
+                <h2 class="">Where do I live</h2>
+                <p class="">I live in very lovely dorm, Hammond, on men-only floor. I really like where I live, it's very comfortable and quiet. All my neighbours are very well-behaved, neat and silent people, especially on <br>Friday - Sunday. I am also very c</p>
             </div>
+        </div>
+        <div class="col-md-4 story-img px-1 h-100 d-none d-md-flex py-4">
+<!--            <img src="../images/us_1.jpg" alt="" class="img-fluid">-->
+            <iframe id="dorm_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.4180216594996!2d-76.51628148481107!3d40.333071979374886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8a89b5535f5dd%3A0xc2042069eb6b4c3b!2sHammond%20Hall!5e0!3m2!1sen!2sus!4v1676564112139!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
+
+    <form action="post">
+
+        <section class="comments-section d-flex flex-column align-items-center">
+            <div class="comment-new d-flex flex-column align-items-center my-5">
+
+                <div class="contact-info d-flex my-2 w-70 flex-wrap justify-content-center">
+                    <div class="input-data">
+                        <label for="enter-name">Name/nickname</label>
+                        <input type="text" name="enter-name" placeholder="Enter your name" id="enter-name">
+                    </div>
+                    <div class="input-data">
+                        <label for="enter-email">Email</label>
+                        <input type="email" name="enter-email" id="enter-email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <textarea class="comment-textarea my-2" name="enter-comment" placeholder="Enter your lovely comment here"></textarea>
+                <div class="comment-actions">
+                    <button class="post">Comment</button>
+                </div>
+            </div>
+            <div class="comment initial">
+                <div class="comment-avatar-container">
+                    <div class="commentator">
+                        <div class="comment-img">
+                            <img src="https://media.tenor.com/GU-otnw1RB0AAAAC/dancing-cat.gif" alt="prifile image" class="img-fluid">
+                        </div>
+                        <h6>Catominator</h6>
+                        <time>Feb 21, 3:43PM</time>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <p class="comment-text">Bacon ipsum dolor sit amet ground round
+                        short ribs tenderloin shoulder. Chuck chicken strip steak
+                        andouille corned beef. Short loin spare ribs shank tail corned
+                        beef pork loin cow leberkas ham hock pork belly. Chuck sirloin
+                        pancetta, pastrami kielbasa ribeye tail strip steak shankle bacon andouille salami.</p>
+                    <div class="thumbs">
+                        <label>
+                            <p class="counter like">65</p>
+                            <input type="checkbox" name="thumb" value="1" id="">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                        </label>
+                        <label>
+                            <p class="counter dislike">53</p>
+                            <input type="checkbox" name="thumb" value="1" onclick="counterIncrement()" id="">
+                            <i class="bi bi-hand-thumbs-down"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="comment response">-->
+<!--                <div class="comment-avatar-container">-->
+<!--                    <img class="comment-avatar" src="http://placekitten.com/100/100" />-->
+<!--                </div>-->
+<!--                <p class="comment-text">Bacon ipsum dolor sit amet ground round short ribs tenderloin shoulder. Chuck chicken strip steak andouille corned beef. Short loin spare ribs shank tail corned beef pork loin cow leberkas ham hock pork belly. Chuck sirloin pancetta, pastrami kielbasa ribeye tail strip steak shankle bacon andouille salami.</p>-->
+<!--                <p class="comment-time-stamp">11/20/13 12:00 pm</p>-->
+<!--            </div>-->
+        </section>
+
+    </form>
 </main>
 
 <footer>
     <section class="bg-dark d-flex p-2 p-md-4 w-100">
-        <div>
-            <a href="Contacts.html" id="contacts-ref" class="p-1 rounded-1 ">How to find me :)</a>
-        </div>
         <div class="social-media d-flex align-items-center justify-content-end flex-fill">
             <a href="https://www.facebook.com/profile.php?id=100007018123636" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -90,15 +138,6 @@
     </section>
 </footer>
 </body>
-
-
-<script>
-    $(document).ready(function(){
-        $(".nav-tabs a").click(function(){
-            $(this).tab('show');
-        });
-    });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </html>

@@ -7,13 +7,86 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 
 html {
     overflow: scroll;
     height: 100%;
+}
+
+.story::-webkit-scrollbar {
+    display: none;
+}
+
+.story-box {
+    width: 90%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.story {
+    max-width: 90%;
+    border: 1px solid black;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    max-height: 25rem;
+    /*padding: 1rem;*/
+    display: flex;
+    align-items: center;
+    /*overflow: scroll;*/
+    align-items: flex-start;
+}
+
+.story .img-fluid {
+    height: 100%;
+}
+
+.textbox {
+    max-height: 100%;
+}
+
+.story-img {
+    display: flex;
+    justify-content: center;
+    /*padding: 0;*/
+    min-height: 100%;
+}
+
+#contacts-ref {
+    background-color: #ABB8C3;
+    text-decoration: none;
+    color: #343a40;
+    height: fit-content;
+    letter-spacing: 0.1rem;
+}
+
+.img-gallery img {
+    /*max-height: 20rem;*/
+    display: block;
+    object-fit: contain;
+    min-width: 100%;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+.img-gallery {
+    overflow: hidden;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+.img-content {
+    display: flex;
+    animation: move 4s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body {
@@ -155,11 +228,12 @@ footer {
     letter-spacing: 0.1rem;
 }
 
-.animation-wrapper {
-    border: none;
+.storybox {
+    border: 1px black solid;
 }
 
-.navbar {
+.story-img {
+    height: 15rem;
 }
 
 @media screen and (min-width: 1200px){
@@ -207,7 +281,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     .descr-text {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .hover-popup {
         font-size: 0.5rem;
@@ -220,13 +294,42 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-    .descr-text {
-        font-size: 0.3rem;
+    .story-title {
+        font-size: 1rem;
     }
-    .hover-popup {
-        font-size: 0.5rem;
+    .story-descr {
+        font-size: 0.8rem;
     }
     svg {
         width: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .story {
+        overflow: scroll;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .descr-text {
+        height: 95%;
+        overflow: scroll;
+        margin: 1rem 0;
+
+    }
+    .story {
+        height: 25rem;
+    }
+    .image-right{
+        text-align: right;
+    }
+
+    .image-right img{
+        margin-right: 1rem;
+    }
+    #dorm_map {
+        width: 100%;
+        height: 100%;
     }
 }
