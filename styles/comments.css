@@ -148,3 +148,7 @@ label:has(.dislike){
         padding: 0.8rem;
     }
 }
+
+.btn-secondary {
+    color: darkgray;
+}
