@@ -68,45 +68,99 @@
                 <div class="contact-info d-flex my-2 w-70 flex-wrap justify-content-center">
                     <div class="input-data">
                         <label for="enter-name">Name/nickname</label>
-                        <input type="text" name="enter-name" placeholder="Enter your name" id="enter-name">
+                        <input type="text" name="enter-name" placeholder="Enter your name" id="enter-name" required>
                     </div>
                     <div class="input-data">
                         <label for="enter-email">Email</label>
-                        <input type="email" name="enter-email" id="enter-email" placeholder="Enter your email">
+                        <input type="email" name="enter-email" id="enter-email" placeholder="Enter your email" required>
                     </div>
                 </div>
-                <textarea class="comment-textarea my-2" name="enter-comment" placeholder="Enter your lovely comment here"></textarea>
+                <textarea class="comment-textarea my-2" name="enter-comment" placeholder="Enter your lovely comment here" required></textarea>
                 <div class="comment-actions">
-                    <button class="post">Comment</button>
+                    <button class="post" type="button" class="btn btn-secondary">Comment</button>
                 </div>
             </div>
-            <div class="comment initial">
-                <div class="comment-avatar-container">
-                    <div class="commentator">
-                        <div class="comment-img">
-                            <img src="https://media.tenor.com/GU-otnw1RB0AAAAC/dancing-cat.gif" alt="prifile image" class="img-fluid">
+            <div class="comment-area">
+                <div class="comment initial">
+                    <div class="comment-avatar-container">
+                        <div class="commentator">
+                            <div class="comment-img">
+                                <img src="https://media.tenor.com/GU-otnw1RB0AAAAC/dancing-cat.gif" alt="prifile image" class="img-fluid">
+                            </div>
+                            <h6>Catominator</h6>
+                            <time>Feb 21, 3:43PM</time>
                         </div>
-                        <h6>Catominator</h6>
-                        <time>Feb 21, 3:43PM</time>
+                    </div>
+                    <div class="feedback">
+                        <p class="comment-text">This dude is so cool, I wish I could be as cool as he is.</p>
+                        <div class="thumbs">
+                            <label>
+                                <p class="counter like">57</p>
+                                <input type="checkbox" name="thumb" value="1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </label>
+                            <label>
+                                <p class="counter dislike">11</p>
+                                <input type="checkbox" name="thumb" value="-1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-down"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
-                <div class="feedback">
-                    <p class="comment-text">Bacon ipsum dolor sit amet ground round
-                        short ribs tenderloin shoulder. Chuck chicken strip steak
-                        andouille corned beef. Short loin spare ribs shank tail corned
-                        beef pork loin cow leberkas ham hock pork belly. Chuck sirloin
-                        pancetta, pastrami kielbasa ribeye tail strip steak shankle bacon andouille salami.</p>
-                    <div class="thumbs">
-                        <label>
-                            <p class="counter like">65</p>
-                            <input type="checkbox" name="thumb" value="1" onclick="likeIncrement(this)">
-                            <i class="bi bi-hand-thumbs-up"></i>
-                        </label>
-                        <label>
-                            <p class="counter dislike">53</p>
-                            <input type="checkbox" name="thumb" value="-1" onclick="likeIncrement(this)">
-                            <i class="bi bi-hand-thumbs-down"></i>
-                        </label>
+
+                <div class="comment response">
+                    <div class="comment-avatar-container">
+                        <div class="commentator">
+                            <div class="comment-img">
+                                <img src="https://media.tenor.com/UlTrnRzTDSsAAAAi/sana-goose.gif" alt="prifile image" class="img-fluid">
+
+                            </div>
+                            <h6>Bruce the Goose</h6>
+                            <time>Feb 21, 5:02PM</time>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <p><i>Response to <strong>Catominator</strong></i></p>
+                        <p class="comment-text">Yeah, I wish I could read more about him. I've never heard such cool and funny stories </p>
+                        <div class="thumbs">
+                            <label>
+                                <p class="counter like">32</p>
+                                <input type="checkbox" name="thumb" value="1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </label>
+                            <label>
+                                <p class="counter dislike">2</p>
+                                <input type="checkbox" name="thumb" value="-1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-down"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment initial">
+                    <div class="comment-avatar-container">
+                        <div class="commentator">
+                            <div class="comment-img">
+                                <img src="https://media.tenor.com/6CujUsC1CIkAAAAd/crying-black-guy-meme50fps-interpolated-interpolated.gif" alt="prifile image" class="img-fluid">
+                            </div>
+                            <h6>Fuzzerbutt</h6>
+                            <time>Feb 23, 1:53PM</time>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <p class="comment-text">This dude stinks, his stories have no sense. My dog can joke better on Twitter than this guy</p>
+                        <div class="thumbs">
+                            <label>
+                                <p class="counter like">1</p>
+                                <input type="checkbox" name="thumb" value="1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                            </label>
+                            <label>
+                                <p class="counter dislike">38</p>
+                                <input type="checkbox" name="thumb" value="-1" onclick="likeIncrement(this)">
+                                <i class="bi bi-hand-thumbs-down"></i>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

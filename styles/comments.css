@@ -1,5 +1,16 @@
 .comment-new {
-    border: 2px solid black;
+    border: 4px solid dimgrey;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+}
+
+.comment-new  * {
+    background-color: #f2f2f2;
+}
+
+*::placeholder {
+    color: dimgrey;
 }
 
 .input-data {
@@ -14,6 +25,13 @@
 
 }
 
+.comment-area {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .comment {
     background-color: #f2f2f2;
     border-radius: 4px;
@@ -23,8 +41,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 90%;
     border-radius: 0.5rem;
+    overflow: scroll;
 }
 
 .comment-img {
@@ -40,6 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .feedback {
@@ -47,6 +66,8 @@
     margin: 1rem;
     display:flex;
     flex-direction: column;
+    justify-self: center;
+    width: 100%;
 }
 
 .thumbs {
@@ -80,4 +101,50 @@
 
 time {
     font-size: 0.8rem;
+}
+
+.initial {
+    width: 100%;
+}
+
+.response {
+    width: 90%;
+
+}
+
+.comment-text {
+    overflow: scroll;
+}
+
+label:has(.like) {
+    color: green;
+    font-weight: bolder;
+}
+
+label:has(.dislike){
+    color: darkred;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px){
+    .comment-img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .comment-img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .comment-avatar-container > *{
+        font-size: 20%;
+    }
+    .commentator, .feedback {
+        padding: 0.4rem
+    }
+    .comment {
+        padding: 0.8rem;
+    }
 }
