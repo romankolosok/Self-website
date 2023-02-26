@@ -17,16 +17,6 @@ function likeIncrement(element) {
     }
 }
 
-function create(htmlStr) {
-    var frag = document.createDocumentFragment(),
-        temp = document.createElement('div');
-    temp.innerHTML = htmlStr;
-    while (temp.firstChild) {
-        frag.appendChild(temp.firstChild);
-    }
-    return frag;
-}
-
 function stretch (commentElement) {
     commentElement.style.height = ""
     commentElement.style.height = Math.min(commentElement.scrollHeight, 200) + "px"
@@ -40,11 +30,15 @@ function formSubmissionHandler(element){
 
     if(!!commentElement.value && !!emailElement.value && /\w{2,}\@\w{2,}\.\w{2,15}/.test(emailElement.value) && !!nameElement.value){
         response = `What do you think you're doing? This website is not a place for harassing people. You, ${nameElement.value} are not allowed to put your mean comments here. You better think before writing this next time:`
-        console.log(document.body.childNodes);
-        const fragment = create('<div>Hello!</div>');
-
-        document.body.insertAdjacentHTML('beforebegin', fragment)
+        popup = document.getElementById('popup')
+        popup.querySelector('p').textContent = response
+        popup.querySelector('blockquote').textContent = commentElement.value
+        popup.style.display = "flex"
     }
 
-    console.log()
+}
+
+function hidePopup(){
+    document.getElementById('popup').style.display = 'none'
+    document.querySelector('form').reset()
 }
