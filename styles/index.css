@@ -16,6 +16,10 @@ html {
     height: 100%;
 }
 
+.bg-primary {
+    background-color: #8cb4f5!important;
+}
+
 body {
     position: relative;
     margin-bottom: 2rem;
@@ -33,9 +37,15 @@ pg-descr {
 
 }
 
+.logotype {
+    font-size: 50%;
+    font-family: Coolvetica;
+    letter-spacing: 0.1rem;
+}
 
 #logo {
     max-height: 4rem;
+    width: auto;
 }
 
 .nav-link {
@@ -115,6 +125,10 @@ pg-descr {
     display: block;
     line-height: 1em;
     overflow: hidden;
+}
+
+.row:has(.txt-description) {
+    background-color: #8cb4f5!important;
 }
 
 .hover-popup {

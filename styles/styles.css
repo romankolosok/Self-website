@@ -11,6 +11,11 @@
     background-color: #8cb4f5!important;
 }
 
+.textbox h2 {
+    font-weight: bolder;
+    font-style: italic;
+}
+
 *::-webkit-scrollbar {
     display: none;
 }
